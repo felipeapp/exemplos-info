@@ -2,6 +2,10 @@
 
 Este repositório está em progresso e possui os arquivos de código-fonte desenvolvidos no ano letivo 2022 para a disciplina Programação com Acesso a Banco de Dados, do curso Técnico Integrado em Informática, do Campus IFRN de São Gonçalo do Amarante.
 
+## ⚠️ Atenção ⚠️
+
+O servidor MySQL do LADIR-SGA, ao qual este leia-me se refere a seguir, é um servidor compartilhado e que deve ser usado apenas para desenvolvimento e testes, nunca para um ambiente de produção ou para armazenar dados confidenciais.
+
 ## Acesso ao Servidor MySQL do LADIR-SGA
 
 O servidor MySQL está disponível em uma VM na rede interna do campus. A ideia é que cada aluno e professor possa usar essa instância de forma remota, evitando instalar um servidor MySQL em cada máquina dos laboratórios. Use os dados abaixo para acesso.
