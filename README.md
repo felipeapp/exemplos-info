@@ -23,7 +23,7 @@ ALTER USER 'sua_matricula'@'%' IDENTIFIED BY 'nova_senha';
 Cada usuário tem permissão para criar e remover bancos de dados cujo nome começa com sua matrícula seguida de um `_`. Por exemplo, o usuário de matrícula `123456` tem permissão para criar bancos de dados que comecem com o nome `123456_`, como `123456_lista_01` ou `123456_prova_final`, e assim por diante.
 
 
-
+```mermaid
 flowchart TB
     %% Documentation: https://mermaid-js.github.io/mermaid/#/flowchart
     A(("/start")):::entryPoint -->|Hi! My name is Professor Bot...| B((GENDER)):::state
@@ -45,3 +45,4 @@ flowchart TB
     classDef state fill:#222222, color:#ffffff, stroke:#ffffff
     classDef entryPoint fill:#009c11, stroke:#42FF57, color:#ffffff
     classDef termination fill:#bb0007, stroke:#E60109, color:#ffffff
+```
