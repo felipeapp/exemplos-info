@@ -21,28 +21,3 @@ ALTER USER 'sua_matricula'@'%' IDENTIFIED BY 'nova_senha';
 ```
 
 Cada usuário tem permissão para criar e remover bancos de dados cujo nome começa com sua matrícula seguida de um `_`. Por exemplo, o usuário de matrícula `123456` tem permissão para criar bancos de dados que comecem com o nome `123456_`, como `123456_lista_01` ou `123456_prova_final`, e assim por diante.
-
-
-```mermaid
-flowchart TB
-    %% Documentation: https://mermaid-js.github.io/mermaid/#/flowchart
-    A(("/start")):::entryPoint -->|Hi! My name is Professor Bot...| B((GENDER)):::state
-    B --> |"- Boy <br /> - Girl <br /> - Other"|C("(choice)"):::userInput 
-    C --> |I see! Please send me a photo...| D((PHOTO)):::state
-    D --> E("/skip"):::userInput
-    D --> F("(photo)"):::userInput
-    E --> |I bet you look great!| G[\ /]:::userInput
-    F --> |Gorgeous!| G[\ /]
-    G --> |"Now, send me your location .."| H((LOCATION)):::state
-    H --> I("/skip"):::userInput
-    H --> J("(location)"):::userInput
-    I --> |You seem a bit paranoid!| K[\" "/]:::userInput
-    J --> |Maybe I can visit...| K
-    K --> |"Tell me about yourself..."| L(("BIO")):::state
-    L --> M("(text)"):::userInput
-    M --> |"Thanks and bye!"| End(("END")):::termination
-    classDef userInput  fill:#2a5279, color:#ffffff, stroke:#ffffff
-    classDef state fill:#222222, color:#ffffff, stroke:#ffffff
-    classDef entryPoint fill:#009c11, stroke:#42FF57, color:#ffffff
-    classDef termination fill:#bb0007, stroke:#E60109, color:#ffffff
-```
